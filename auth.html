@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Authorization</title>
+    <script>
+        function getLocation() {
+            var location = prompt("Please enter your location:");
+            if (location && location.toLowerCase() === "punjab") {
+                window.location.href = "welcome.html";
+            } else {
+                alert("You entered the wrong location");
+            }
+        }
+    </script>
+</head>
+<body>
+    <button onclick="getLocation()">Get Location</button>
+</body>
+</html>
